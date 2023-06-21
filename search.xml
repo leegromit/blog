@@ -3,7 +3,7 @@
   <entry>
     <title>Gitalk评论插件踩坑指南</title>
     <url>/2023/05/11/Gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>使用GitHub Page搭建好静态网页博客之后，开始着手处理评论功能。我所使用的主题Redefine中包含了这几个评论插件的实现需要自己去安装完善，最后我选择了Gitalk。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>使用GitHub Page搭建好静态网页博客之后，开始着手处理评论功能。我所使用的主题Redefine中包含了这几个评论插件的实现需要自己去安装完善，最后我选择了Gitalk。</p>
 <img lazyload src="/images/loading.svg" data-src="/2023/05/11/Gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/1.png" class title="评论插件">
 
 
@@ -48,7 +48,7 @@
   <entry>
     <title>Ubuntu图形化界面</title>
     <url>/2023/05/09/My-New-Post/</url>
-    <content><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>在重新安装服务器显卡后进不去图形化界面，但是可以通过Xshell或MobaXterm远程连接，在卸载重装驱动后无果，之后慢慢找到了解决方案。如果进不去Ubuntu的图形化界面，但是可以通过远程连接或者进入recovery模式，希望以下解决方法可以帮到你。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>在重新安装服务器显卡后进不去图形化界面，但是可以通过Xshell或MobaXterm远程连接，在卸载重装驱动后无果，之后慢慢找到了解决方案。如果进不去Ubuntu的图形化界面，但是可以通过远程连接或者进入recovery模式，希望以下解决方法可以帮到你。</p>
 <h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>首先删除lightdm：</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get remove lightdm</span><br></pre></td></tr></table></figure></div>
 
@@ -88,7 +88,7 @@
   <entry>
     <title>Hello World</title>
     <url>/2023/05/08/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link" href="https://hexo.io/">Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link" href="https://hexo.io/docs/">documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link" href="https://hexo.io/docs/troubleshooting.html">troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link" href="https://github.com/hexojs/hexo/issues">GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a class="link" href="https://hexo.io/">Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link" href="https://hexo.io/docs/">documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link" href="https://hexo.io/docs/troubleshooting.html">troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link" href="https://github.com/hexojs/hexo/issues">GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 
 <p>More info: <a class="link" href="https://hexo.io/docs/writing.html">Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
@@ -106,7 +106,7 @@
   <entry>
     <title>基于ChatGLM的部署实现</title>
     <url>/2023/06/16/%E5%9F%BA%E4%BA%8EChatGLM%E7%9A%84%E9%83%A8%E7%BD%B2%E5%AE%9E%E7%8E%B0/</url>
-    <content><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>ChatGLM-6B 是一个由清华大学KEG实验室和智谱AI基于GLM模型开发的人工智能助手。（参考链接：<a class="link" href="https://github.com/THUDM/ChatGLM-6B">https://github.com/THUDM/ChatGLM-6B <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> ）</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>ChatGLM-6B 是一个由清华大学KEG实验室和智谱AI基于GLM模型开发的人工智能助手。（参考链接：<a class="link" href="https://github.com/THUDM/ChatGLM-6B">https://github.com/THUDM/ChatGLM-6B <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> ）</p>
 <img lazyload src="/images/loading.svg" data-src="/2023/06/16/%E5%9F%BA%E4%BA%8EChatGLM%E7%9A%84%E9%83%A8%E7%BD%B2%E5%AE%9E%E7%8E%B0/1.png" class>
 
 <p>ChatGLM-6B 具有强大的语言处理能力，可以理解用户的问题和要求，并给出相应的答案和建议。<br>同时其作为ChatGPT轻量化的小参数版本，虽然效果上还有些差距，但其可以单卡部署在个人电脑上。<br>官方列出的硬件需求：</p>
