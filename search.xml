@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/05/08/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a class="link" href="https://hexo.io/">Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link" href="https://hexo.io/docs/">documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link" href="https://hexo.io/docs/troubleshooting.html">troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link" href="https://github.com/hexojs/hexo/issues">GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link" href="https://hexo.io/docs/writing.html">Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link" href="https://hexo.io/docs/server.html">Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link" href="https://hexo.io/docs/generating.html">Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link" href="https://hexo.io/docs/one-command-deployment.html">Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Gitalk评论插件踩坑指南</title>
     <url>/2023/05/11/Gitalk%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6%E8%B8%A9%E5%9D%91%E6%8C%87%E5%8D%97/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>使用GitHub Page搭建好静态网页博客之后，开始着手处理评论功能。我所使用的主题Redefine中包含了这几个评论插件的实现需要自己去安装完善，最后我选择了Gitalk。</p>
@@ -44,64 +62,6 @@
       <tags>
         <tag>问题及解决方案</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Ubuntu图形化界面</title>
-    <url>/2023/05/09/My-New-Post/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>在重新安装服务器显卡后进不去图形化界面，但是可以通过Xshell或MobaXterm远程连接，在卸载重装驱动后无果，之后慢慢找到了解决方案。如果进不去Ubuntu的图形化界面，但是可以通过远程连接或者进入recovery模式，希望以下解决方法可以帮到你。</p>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>首先删除lightdm：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get remove lightdm</span><br></pre></td></tr></table></figure></div>
-
-<p>然后重新安装图形化界面</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install ubuntu-desktop</span><br><span class="line">sudo apt-get install unity</span><br><span class="line">sudo apt-get install lightdm</span><br></pre></td></tr></table></figure></div>
-<p> install lightdm之后会进入一个选择界面，选择lightdm或者gdm3，我这里选择了gdm3，然后</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo service gmd3 start</span><br></pre></td></tr></table></figure></div>
-<p>这里报错<code>Failed to start gmd3.service: Unit gmd3.service not found.</code></p>
-<p>输入下面命令后选择gdm3</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo dpkg-reconfigure gdm3</span><br></pre></td></tr></table></figure></div>
-
-<p>再更改默认开启方式</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl set-defalut graphical.target</span><br></pre></td></tr></table></figure></div>
-<p>这里我报错了<code>Unknown operation set-defalut.</code>但好像最后没什么影响</p>
-<p>最后reboot重启，大功告成。</p>
-<p>如果使用命令apt-get install xxx 安装软件时报“<a class="link" href="http://cn.archive.ubuntu.com/ubuntu">http://cn.archive.ubuntu.com/ubuntu <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> xxx“连接失败的错误，就需要修改系统默认源source.list文件（&#x2F;etc&#x2F;apt&#x2F;sources.list）。</p>
-<p>修改读写权限</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">chmod</span> 666 /etc/apt/sources.list</span><br></pre></td></tr></table></figure></div>
-<p>进入镜像文件 </p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/apt/sources.list</span><br></pre></td></tr></table></figure></div>
-<p>把 <a class="link" href="http://cn.archive.ubuntu.com/ubuntu">http://cn.archive.ubuntu.com/ubuntu <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 地址全部替换为可用的镜像，这里使用的阿里云： <a class="link" href="http://mirrors.aliyun.com/ubuntu">http://mirrors.aliyun.com/ubuntu <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>像下面这样，示例：</p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to</span></span><br><span class="line"><span class="comment"># newer versions of the distribution.</span></span><br><span class="line"><span class="comment"># deb http://cn.archive.ubuntu.com/ubuntu/ focal main restricted</span></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal main restricted</span><br><span class="line"><span class="comment"># deb-src http://cn.archive.ubuntu.com/ubuntu/ focal main restricted</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## Major bug fix updates produced after the final release of the</span></span><br><span class="line"><span class="comment">## distribution.</span></span><br><span class="line"><span class="comment"># deb http://cn.archive.ubuntu.com/ubuntu/ focal-updates main restricted</span></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted</span><br><span class="line"><span class="comment"># deb-src http://cn.archive.ubuntu.com/ubuntu/ focal-updates main restricted</span></span><br></pre></td></tr></table></figure></div>
-<p>ESC后输入 ：wq!  退出vim </p>
-<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure></div>
-
-<p>最后reboot重启。</p>
-<p>（可能大家遇到的问题都不太一样，希望能给予一定帮助）</p>
-]]></content>
-      <categories>
-        <category>Q&amp;A</category>
-      </categories>
-      <tags>
-        <tag>问题及解决方案</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/05/08/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a class="link" href="https://hexo.io/">Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link" href="https://hexo.io/docs/">documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link" href="https://hexo.io/docs/troubleshooting.html">troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link" href="https://github.com/hexojs/hexo/issues">GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link" href="https://hexo.io/docs/writing.html">Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link" href="https://hexo.io/docs/server.html">Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link" href="https://hexo.io/docs/generating.html">Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
-
-<p>More info: <a class="link" href="https://hexo.io/docs/one-command-deployment.html">Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-]]></content>
   </entry>
   <entry>
     <title>基于ChatGLM的部署实现</title>
@@ -156,6 +116,46 @@
       </categories>
       <tags>
         <tag>ChatGPT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu图形化界面</title>
+    <url>/2023/05/09/My-New-Post/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>在重新安装服务器显卡后进不去图形化界面，但是可以通过Xshell或MobaXterm远程连接，在卸载重装驱动后无果，之后慢慢找到了解决方案。如果进不去Ubuntu的图形化界面，但是可以通过远程连接或者进入recovery模式，希望以下解决方法可以帮到你。</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>首先删除lightdm：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get remove lightdm</span><br></pre></td></tr></table></figure></div>
+
+<p>然后重新安装图形化界面</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install ubuntu-desktop</span><br><span class="line">sudo apt-get install unity</span><br><span class="line">sudo apt-get install lightdm</span><br></pre></td></tr></table></figure></div>
+<p> install lightdm之后会进入一个选择界面，选择lightdm或者gdm3，我这里选择了gdm3，然后</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo service gmd3 start</span><br></pre></td></tr></table></figure></div>
+<p>这里报错<code>Failed to start gmd3.service: Unit gmd3.service not found.</code></p>
+<p>输入下面命令后选择gdm3</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo dpkg-reconfigure gdm3</span><br></pre></td></tr></table></figure></div>
+
+<p>再更改默认开启方式</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo systemctl set-defalut graphical.target</span><br></pre></td></tr></table></figure></div>
+<p>这里我报错了<code>Unknown operation set-defalut.</code>但好像最后没什么影响</p>
+<p>最后reboot重启，大功告成。</p>
+<p>如果使用命令apt-get install xxx 安装软件时报“<a class="link" href="http://cn.archive.ubuntu.com/ubuntu">http://cn.archive.ubuntu.com/ubuntu <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> xxx“连接失败的错误，就需要修改系统默认源source.list文件（&#x2F;etc&#x2F;apt&#x2F;sources.list）。</p>
+<p>修改读写权限</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">chmod</span> 666 /etc/apt/sources.list</span><br></pre></td></tr></table></figure></div>
+<p>进入镜像文件 </p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/apt/sources.list</span><br></pre></td></tr></table></figure></div>
+<p>把 <a class="link" href="http://cn.archive.ubuntu.com/ubuntu">http://cn.archive.ubuntu.com/ubuntu <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 地址全部替换为可用的镜像，这里使用的阿里云： <a class="link" href="http://mirrors.aliyun.com/ubuntu">http://mirrors.aliyun.com/ubuntu <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>像下面这样，示例：</p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to</span></span><br><span class="line"><span class="comment"># newer versions of the distribution.</span></span><br><span class="line"><span class="comment"># deb http://cn.archive.ubuntu.com/ubuntu/ focal main restricted</span></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal main restricted</span><br><span class="line"><span class="comment"># deb-src http://cn.archive.ubuntu.com/ubuntu/ focal main restricted</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## Major bug fix updates produced after the final release of the</span></span><br><span class="line"><span class="comment">## distribution.</span></span><br><span class="line"><span class="comment"># deb http://cn.archive.ubuntu.com/ubuntu/ focal-updates main restricted</span></span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ focal-updates main restricted</span><br><span class="line"><span class="comment"># deb-src http://cn.archive.ubuntu.com/ubuntu/ focal-updates main restricted</span></span><br></pre></td></tr></table></figure></div>
+<p>ESC后输入 ：wq!  退出vim </p>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure></div>
+
+<p>最后reboot重启。</p>
+<p>（可能大家遇到的问题都不太一样，希望能给予一定帮助）</p>
+]]></content>
+      <categories>
+        <category>Q&amp;A</category>
+      </categories>
+      <tags>
+        <tag>问题及解决方案</tag>
       </tags>
   </entry>
 </search>
